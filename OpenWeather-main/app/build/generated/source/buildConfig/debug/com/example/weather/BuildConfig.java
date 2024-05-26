@@ -10,5 +10,5 @@ public final class BuildConfig {
   public static final int VERSION_CODE = 1;
   public static final String VERSION_NAME = "1.0";
   // Field from default config.
-  public static final String OPENWEATHER_API_KEY = "3d219430d0cc65dcba96db1b421e440b";
+  public static final String OPENWEATHER_API_KEY = "7cf54bddb22492ea6d2b37ae8dec471b";
 }

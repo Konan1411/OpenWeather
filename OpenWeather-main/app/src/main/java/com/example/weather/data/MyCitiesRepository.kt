@@ -8,9 +8,9 @@ package com.example.weather.data
 class MyCitiesRepository(
     private val dao: MyCitiesDao
 ) {
-    suspend fun insertMyCities(city: MyCities) = dao.insert(city)
+    suspend fun insertMyCity(city: MyCities) = dao.insert(city)
 
-    suspend fun deleteMyCities(city: MyCities) = dao.delete(city)
+    suspend fun deleteMyCity(city: MyCities) = dao.delete(city)
 
-    fun getAllCities() = dao.getAllcities()
+    fun getCitiesForUser(userId: Int) = dao.getCitiesForUser(userId)
 }

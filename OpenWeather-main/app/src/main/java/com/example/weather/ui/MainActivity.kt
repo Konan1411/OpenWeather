@@ -8,6 +8,7 @@
 package com.example.weather.ui
 
 import android.app.AlertDialog
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
@@ -61,14 +62,13 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfig) || super.onSupportNavigateUp()
     }
 
-    private fun addCitiesToDrawer() {
+    fun addCitiesToDrawer() {
         val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
 
         val navView: NavigationView = findViewById(R.id.nav_view)
         val citiesSubMenu = navView.menu.findItem(R.id.submenu_cities)?.subMenu
 
         val drawer: DrawerLayout = findViewById(R.id.drawer_layout)
-
         myCitiesViewModel.myCities_List.observe(this) { cityList ->
             citiesSubMenu?.clear()
 
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                     )
                     drawer.closeDrawers()
 
-                    myCitiesViewModel.addMyCities(MyCities(decity.city, System.currentTimeMillis()))
+                    myCitiesViewModel.addMyCities(MyCities(0,decity.city, 1, System.currentTimeMillis())) // a changer user
 
                     val navController = findNavController(R.id.nav_host_fragment)
                     navController.navigate(R.id.forecast_list)
@@ -138,7 +138,7 @@ class MainActivity : AppCompatActivity() {
         val drawer: DrawerLayout = findViewById(R.id.drawer_layout)
         drawer.closeDrawers()
 
-        myCitiesViewModel.addMyCities(MyCities(cityName, System.currentTimeMillis()))
+        myCitiesViewModel.addMyCities(MyCities(0, cityName, 1, System.currentTimeMillis())) // a changer user
 
         val navController = findNavController(R.id.nav_host_fragment)
         navController.navigate(R.id.forecast_list)

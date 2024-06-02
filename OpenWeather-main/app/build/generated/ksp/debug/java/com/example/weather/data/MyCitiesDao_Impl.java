@@ -36,32 +36,30 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
     this.__insertionAdapterOfMyCities = new EntityInsertionAdapter<MyCities>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR REPLACE INTO `MyCities` (`city`,`timestamp`) VALUES (?,?)";
+        return "INSERT OR ABORT INTO `MyCities` (`id`,`city`,`user`,`timestamp`) VALUES (nullif(?, 0),?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, MyCities value) {
+        stmt.bindLong(1, value.getId());
         if (value.getCity() == null) {
-          stmt.bindNull(1);
+          stmt.bindNull(2);
         } else {
-          stmt.bindString(1, value.getCity());
+          stmt.bindString(2, value.getCity());
         }
-        stmt.bindLong(2, value.getTimestamp());
+        stmt.bindLong(3, value.getUser());
+        stmt.bindLong(4, value.getTimestamp());
       }
     };
     this.__deletionAdapterOfMyCities = new EntityDeletionOrUpdateAdapter<MyCities>(__db) {
       @Override
       public String createQuery() {
-        return "DELETE FROM `MyCities` WHERE `city` = ?";
+        return "DELETE FROM `MyCities` WHERE `id` = ?";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, MyCities value) {
-        if (value.getCity() == null) {
-          stmt.bindNull(1);
-        } else {
-          stmt.bindString(1, value.getCity());
-        }
+        stmt.bindLong(1, value.getId());
       }
     };
   }
@@ -101,28 +99,36 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
   }
 
   @Override
-  public Flow<List<MyCities>> getAllcities() {
-    final String _sql = "SELECT * FROM MyCities ORDER BY timestamp DESC";
-    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
+  public Flow<List<MyCities>> getCitiesForUser(final int userId) {
+    final String _sql = "SELECT * FROM MyCities WHERE user = ?";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 1);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, userId);
     return CoroutinesRoom.createFlow(__db, false, new String[]{"MyCities"}, new Callable<List<MyCities>>() {
       @Override
       public List<MyCities> call() throws Exception {
         final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
         try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
           final int _cursorIndexOfCity = CursorUtil.getColumnIndexOrThrow(_cursor, "city");
+          final int _cursorIndexOfUser = CursorUtil.getColumnIndexOrThrow(_cursor, "user");
           final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
           final List<MyCities> _result = new ArrayList<MyCities>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final MyCities _item;
+            final int _tmpId;
+            _tmpId = _cursor.getInt(_cursorIndexOfId);
             final String _tmpCity;
             if (_cursor.isNull(_cursorIndexOfCity)) {
               _tmpCity = null;
             } else {
               _tmpCity = _cursor.getString(_cursorIndexOfCity);
             }
+            final int _tmpUser;
+            _tmpUser = _cursor.getInt(_cursorIndexOfUser);
             final long _tmpTimestamp;
             _tmpTimestamp = _cursor.getLong(_cursorIndexOfTimestamp);
-            _item = new MyCities(_tmpCity,_tmpTimestamp);
+            _item = new MyCities(_tmpId,_tmpCity,_tmpUser,_tmpTimestamp);
             _result.add(_item);
           }
           return _result;

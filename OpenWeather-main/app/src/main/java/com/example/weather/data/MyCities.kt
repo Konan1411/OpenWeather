@@ -1,17 +1,21 @@
-/**
- * The MyCities entity class is defined to represent the cities saved by the user.
- * Contains city name and timestamp fields and is labeled as the Room database entity.
- */
-
 package com.example.weather.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import androidx.room.ForeignKey
 
-@Entity
+@Entity(
+    tableName = "MyCities",
+    foreignKeys = [ForeignKey(
+        entity = User::class,
+        parentColumns = ["id"],
+        childColumns = ["user"],
+        onDelete = ForeignKey.CASCADE
+    )]
+)
 data class MyCities(
-    @PrimaryKey
-    val city : String,
-
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val city: String,
+    val user: Int,
     val timestamp: Long
-) : java.io.Serializable
+)

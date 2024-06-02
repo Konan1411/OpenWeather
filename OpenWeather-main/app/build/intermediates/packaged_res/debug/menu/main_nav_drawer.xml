@@ -9,6 +9,10 @@
     </item>
 
     <item
+        android:id="@+id/login"
+        android:icon="@drawable/user"
+        android:title="@string/label_login" />
+    <item
         android:id="@+id/settings"
         android:title="@string/label_setting"
         android:icon="@drawable/ic_action_settings">

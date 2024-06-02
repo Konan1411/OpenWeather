@@ -1,9 +1,3 @@
-/**
- * Defines the MyCitiesViewModel class, which inherits from AndroidViewModel.
- * Manage UI data related to MyCities entities.
- * Provides methods to insert, delete and get all cities.
- */
-
 package com.example.weather.ui
 
 import android.app.Application
@@ -20,17 +14,21 @@ class MyCitiesViewModel(application: Application) : AndroidViewModel(application
         AppDatabase.getInstance(application).myCitiesDao()
     )
 
-    val myCities_List = myCityRepository.getAllCities().asLiveData()
+    // Supposons que vous ayez un moyen d'obtenir l'userId à partir de l'application, 
+    // par exemple à partir d'une session utilisateur.
+    private val userId: Int = 1
+
+    val myCities_List = myCityRepository.getCitiesForUser(userId).asLiveData()
 
     fun addMyCities(city: MyCities) {
         viewModelScope.launch {
-            myCityRepository.insertMyCities(city)
+            myCityRepository.insertMyCity(city)
         }
     }
 
     fun removeMyCities(city: MyCities) {
         viewModelScope.launch {
-            myCityRepository.deleteMyCities(city)
+            myCityRepository.deleteMyCity(city)
         }
     }
 }

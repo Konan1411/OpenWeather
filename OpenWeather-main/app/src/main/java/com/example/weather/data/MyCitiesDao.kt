@@ -5,17 +5,20 @@
 
 package com.example.weather.data
 
-import androidx.room.*
+import androidx.room.Dao
+import androidx.room.Delete
+import androidx.room.Insert
+import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface MyCitiesDao{
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
+interface MyCitiesDao {
+    @Insert
     suspend fun insert(city: MyCities)
 
     @Delete
     suspend fun delete(city: MyCities)
 
-    @Query("SELECT * FROM MyCities ORDER BY timestamp DESC")
-    fun getAllcities(): Flow<List<MyCities>>
+    @Query("SELECT * FROM MyCities WHERE user = :userId")
+    fun getCitiesForUser(userId: Int): Flow<List<MyCities>>
 }

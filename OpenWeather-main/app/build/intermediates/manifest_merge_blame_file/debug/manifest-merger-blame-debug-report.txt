@@ -6,108 +6,108 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="24"
-8-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml
+8-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml
+9-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
-11-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:5:5-67
-11-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:5:22-64
+11-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:5:5-67
+11-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <permission
-13-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+13-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
 14        android:name="com.example.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-14-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+14-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
 15        android:protectionLevel="signature" />
-15-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+15-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
 16
 17    <uses-permission android:name="com.example.weather.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-17-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-17-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+17-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+17-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 18
 19    <application
-19-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:7:5-27:19
+19-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:7:5-27:19
 20        android:allowBackup="true"
-20-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:8:9-35
+20-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.9.0] C:\Users\Christophe\.gradle\caches\transforms-3\d3401ab8650e24cf281a0ca485b84623\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+21-->[androidx.core:core:1.9.0] C:\Users\konan\.gradle\caches\transforms-3\e47e6c20811b5cd45dd259b8acfdc07a\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 22        android:dataExtractionRules="@xml/data_extraction_rules"
-22-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:9:9-65
+22-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:9:9-65
 23        android:debuggable="true"
 24        android:extractNativeLibs="false"
 25        android:fullBackupContent="@xml/backup_rules"
-25-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:10:9-54
+25-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:10:9-54
 26        android:icon="@mipmap/ic_launcher"
-26-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:11:9-43
+26-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:11:9-43
 27        android:label="@string/app_name"
-27-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:12:9-41
+27-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:12:9-41
 28        android:supportsRtl="true"
-28-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:13:9-35
+28-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:13:9-35
 29        android:testOnly="true"
 30        android:theme="@style/Theme.CS492Weather" >
-30-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:14:9-50
+30-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:14:9-50
 31        <activity
-31-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:17:9-26:20
+31-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:17:9-26:20
 32            android:name="com.example.weather.ui.MainActivity"
-32-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:18:13-63
+32-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:18:13-63
 33            android:exported="true"
-33-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:20:13-36
+33-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:20:13-36
 34            android:launchMode="singleTop" >
-34-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:19:13-43
+34-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:19:13-43
 35            <intent-filter>
-35-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:21:13-25:29
+35-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:21:13-25:29
 36                <action android:name="android.intent.action.MAIN" />
-36-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:22:17-69
-36-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:22:25-66
+36-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:22:17-69
+36-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:22:25-66
 37
 38                <category android:name="android.intent.category.LAUNCHER" />
-38-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:24:17-77
-38-->D:\Android\OpenWeather-main\app\src\main\AndroidManifest.xml:24:27-74
+38-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:24:17-77
+38-->C:\Users\konan\Downloads\OpenWeather-main\OpenWeather-main\app\src\main\AndroidManifest.xml:24:27-74
 39            </intent-filter>
 40        </activity>
 41
 42        <service
-42-->[androidx.room:room-runtime:2.5.0] C:\Users\Christophe\.gradle\caches\transforms-3\8039223351f94d2dc3f113ae9e15bf0c\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+42-->[androidx.room:room-runtime:2.5.0] C:\Users\konan\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
 43            android:name="androidx.room.MultiInstanceInvalidationService"
-43-->[androidx.room:room-runtime:2.5.0] C:\Users\Christophe\.gradle\caches\transforms-3\8039223351f94d2dc3f113ae9e15bf0c\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+43-->[androidx.room:room-runtime:2.5.0] C:\Users\konan\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
 44            android:directBootAware="true"
-44-->[androidx.room:room-runtime:2.5.0] C:\Users\Christophe\.gradle\caches\transforms-3\8039223351f94d2dc3f113ae9e15bf0c\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+44-->[androidx.room:room-runtime:2.5.0] C:\Users\konan\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
 45            android:exported="false" />
-45-->[androidx.room:room-runtime:2.5.0] C:\Users\Christophe\.gradle\caches\transforms-3\8039223351f94d2dc3f113ae9e15bf0c\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+45-->[androidx.room:room-runtime:2.5.0] C:\Users\konan\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
 46
 47        <uses-library
-47-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+47-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
 48            android:name="androidx.window.extensions"
-48-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+48-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
 49            android:required="false" />
-49-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+49-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
 50        <uses-library
-50-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+50-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
 51            android:name="androidx.window.sidecar"
-51-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+51-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
 52            android:required="false" />
-52-->[androidx.window:window:1.0.0] C:\Users\Christophe\.gradle\caches\transforms-3\4fff5b595a88dc3837f8e3577a976b1a\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+52-->[androidx.window:window:1.0.0] C:\Users\konan\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
 53
 54        <provider
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 56            android:authorities="com.example.weather.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 58            <meta-data
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\Christophe\.gradle\caches\transforms-3\c9c7f36f63e78231dc7885ebc5df06f7\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\konan\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Christophe\.gradle\caches\transforms-3\003d94d5de148a8a7f7d473411b4de4c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\konan\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Christophe\.gradle\caches\transforms-3\003d94d5de148a8a7f7d473411b4de4c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\konan\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\Christophe\.gradle\caches\transforms-3\003d94d5de148a8a7f7d473411b4de4c\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\konan\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 64        </provider>
 65    </application>
 66

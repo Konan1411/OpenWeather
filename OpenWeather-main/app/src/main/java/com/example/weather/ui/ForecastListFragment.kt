@@ -101,22 +101,17 @@ class ForecastListFragment: Fragment(R.layout.forecast_list_screen) {
 
     override fun onResume() {
         super.onResume()
+        fetchForecast()
+    }
 
-        /*
-         * Here, we're reading the current preference values and triggering a data fetching
-         * operation in onResume().  This avoids the need to set up a preference change listener.
-         * It also means that a new API call could potentially be made every time the activity
-         * is resumed.  However, because of the basic caching that's implemented in the
-         * `FiveDayForecastRepository` class, an API call will actually only be made whenever
-         * the city or units setting changes (which is exactly what we want).
-         */
+    private fun fetchForecast() {
         val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
         val city = sharedPrefs.getString(getString(R.string.pref_city_key), "Belfort,France")
         val units = sharedPrefs.getString(getString(R.string.pref_units_key), null)
 
-        myCitiesviewModel.addMyCities(MyCities(city!!, System.currentTimeMillis()))
         viewModel.loadFiveDayForecast(city, units, OPENWEATHER_APPID)
     }
+
 
     /**
      * This method is passed into the RecyclerView adapter to handle clicks on individual items

@@ -30,5 +30,24 @@
         android:id="@+id/settings"
         android:name="com.example.weather.ui.SettingsFragment"
         android:label="@string/label_setting" />
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.weather.ui.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUp" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.weather.ui.SignUpFragment"
+        android:label="Sign Up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/login" />
+    </fragment>
+
 
 </navigation>

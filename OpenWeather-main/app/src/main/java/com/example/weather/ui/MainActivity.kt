@@ -11,6 +11,7 @@ import android.app.AlertDialog
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.activity.viewModels
 import androidx.core.content.edit
 import androidx.drawerlayout.widget.DrawerLayout
@@ -25,6 +26,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.weather.BuildConfig
 import com.example.weather.R
 import com.example.weather.data.MyCities
+import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
 
@@ -57,12 +59,18 @@ class MainActivity : AppCompatActivity() {
         addCitiesToDrawer()
     }
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.top_app_bar_menu, menu)
+        return true
+    }
+
+
     override fun onSupportNavigateUp(): Boolean {
         val navController = findNavController(R.id.nav_host_fragment)
         return navController.navigateUp(appBarConfig) || super.onSupportNavigateUp()
     }
 
-    fun addCitiesToDrawer() {
+    private fun addCitiesToDrawer() {
         val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
 
         val navView: NavigationView = findViewById(R.id.nav_view)

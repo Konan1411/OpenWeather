@@ -27,6 +27,9 @@
     <string name="pref_city_title">City</string>
     <string name="pref_city_key">city</string>
 
+    <string name="pref_user_id">user_id</string>
+    <string name="pref_username">username</string>
+
     <string name="pref_units_title">Weather Units</string>
     <string name="pref_units_key">units</string>
 
@@ -54,6 +57,8 @@
     <string name="label_setting">Setting</string>
     <string name="label_login">Login</string>
     <string name="label_sign_up">Sign Up</string>
+    <string name="label_add">Add City</string>
+    <string name="label_logout">Logout</string>
 
 
     <string name="username_hint">Username</string>
@@ -62,5 +67,7 @@
     <string name="login_button_text">Login</string>
     <string name="sign_up_button_text">Sign Up</string>
     <string name="logo_desc">User Logo</string>
+
+
 
 </resources>

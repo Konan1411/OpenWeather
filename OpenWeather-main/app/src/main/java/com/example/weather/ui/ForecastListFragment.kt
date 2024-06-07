@@ -7,6 +7,7 @@
 package com.example.weather.ui
 
 import android.content.ActivityNotFoundException
+import android.content.Context
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -15,10 +16,12 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.preference.PreferenceManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -27,8 +30,12 @@ import com.example.weather.R
 import com.example.weather.data.ForecastCity
 import com.example.weather.data.ForecastPeriod
 import com.example.weather.data.MyCities
+import com.example.weather.util.SessionManager
 import com.google.android.material.progressindicator.CircularProgressIndicator
 import com.google.android.material.snackbar.Snackbar
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class ForecastListFragment: Fragment(R.layout.forecast_list_screen) {
     private val TAG = "MainActivity"
@@ -41,6 +48,7 @@ class ForecastListFragment: Fragment(R.layout.forecast_list_screen) {
     private lateinit var forecastListRV: RecyclerView
     private lateinit var loadingErrorTV: TextView
     private lateinit var loadingIndicator: CircularProgressIndicator
+    private lateinit var sessionManager: SessionManager
 
     override fun onViewCreated(
         view: View,
@@ -58,6 +66,8 @@ class ForecastListFragment: Fragment(R.layout.forecast_list_screen) {
         forecastListRV.layoutManager = LinearLayoutManager(requireContext())
         forecastListRV.setHasFixedSize(true)
         forecastListRV.adapter = forecastAdapter
+        sessionManager = SessionManager(requireContext())
+
 
         /*
          * Set up an observer on the current forecast data.  If the forecast is not null, display
@@ -101,16 +111,21 @@ class ForecastListFragment: Fragment(R.layout.forecast_list_screen) {
 
     override fun onResume() {
         super.onResume()
-        fetchForecast()
-    }
 
-    private fun fetchForecast() {
         val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(requireContext())
-        val city = sharedPrefs.getString(getString(R.string.pref_city_key), "Belfort,France")
-        val units = sharedPrefs.getString(getString(R.string.pref_units_key), null)
+        val city = sharedPrefs.getString(getString(R.string.pref_city_key), "Belfort,France") ?: "Belfort,France"
+        val units = sharedPrefs.getString(getString(R.string.pref_units_key), getString(R.string.pref_units_default_value))
+        val userId = sessionManager.getUserId()
 
-        viewModel.loadFiveDayForecast(city, units, OPENWEATHER_APPID)
+        if (userId != -1) {
+            viewModel.loadFiveDayForecast(city, units, OPENWEATHER_APPID)
+        } else {
+            // Load default city forecast if no user is logged in
+            viewModel.loadFiveDayForecast("Belfort,France", units, OPENWEATHER_APPID)
+        }
     }
+
+
 
 
     /**

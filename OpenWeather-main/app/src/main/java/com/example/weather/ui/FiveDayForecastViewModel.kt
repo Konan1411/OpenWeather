@@ -82,4 +82,9 @@ class FiveDayForecastViewModel: ViewModel() {
             _forecast.value = result.getOrNull()
         }
     }
+    fun clearFiveDayForecast() {
+        _forecast.value = null
+    }
+
+
 }

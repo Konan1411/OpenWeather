@@ -1,4 +1,3 @@
-
 package com.example.weather.ui
 
 import android.os.Bundle
@@ -7,16 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
-import androidx.fragment.app.Fragment
-import androidx.navigation.fragment.findNavController
-import com.example.weather.R
-import android.graphics.Color
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
-
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
+import com.example.weather.R
+import com.example.weather.data.User
+import kotlinx.coroutines.launch
 
 class SignUpFragment : Fragment() {
+
+    private val userViewModel: UserViewModel by viewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -30,32 +34,37 @@ class SignUpFragment : Fragment() {
         val usernameEditText = view.findViewById<EditText>(R.id.usernameEditText)
         val passwordEditText = view.findViewById<EditText>(R.id.passwordEditText)
         val confirmPasswordEditText = view.findViewById<EditText>(R.id.confirmPasswordEditText)
-
-
         val signUpButton = view.findViewById<Button>(R.id.signUpButton)
+        val errorTextView = view.findViewById<TextView>(R.id.errorTextView)
 
         signUpButton.setOnClickListener {
             val username = usernameEditText.text.toString()
             val password = passwordEditText.text.toString()
             val confirmPassword = confirmPasswordEditText.text.toString()
-            val errorTextView = view.findViewById<TextView>(R.id.errorTextView)
 
+            if (username.isNotEmpty() && password.isNotEmpty() && confirmPassword.isNotEmpty()) {
+                if (password != confirmPassword) {
+                    confirmPasswordEditText.error = "Passwords do not match"
+                    return@setOnClickListener
+                }
 
-            if (password != confirmPassword) {
-                val errorMessage = "Passwords do not match"
-                errorTextView.text = errorMessage
-                errorTextView.visibility = View.VISIBLE
+                // Utilisation de la coroutine pour ajouter l'utilisateur de manière asynchrone
+                lifecycleScope.launch {
+                    val existingUser = userViewModel.getUserByUsername(username)
 
-                confirmPasswordEditText.setTextColor(ContextCompat.getColor(requireContext(), R.color.custom_red))
-
-                return@setOnClickListener
+                    if (existingUser == null) {
+                        val user = User(null, username, password)
+                        userViewModel.addUser(user)
+                        Toast.makeText(requireContext(), "Account created successfully", Toast.LENGTH_SHORT).show()
+                        findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
+                    } else {
+                        errorTextView.text = "Username is already taken"
+                        errorTextView.visibility = View.VISIBLE
+                    }
+                }
+            } else {
+                Toast.makeText(requireContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show()
             }
-            Toast.makeText(requireContext(), "Account created successfully", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_signUpFragment_to_loginFragment)
         }
-
-
-
     }
-
 }

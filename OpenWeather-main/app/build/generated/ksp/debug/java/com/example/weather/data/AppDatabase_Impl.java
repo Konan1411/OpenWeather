@@ -36,13 +36,14 @@ public final class AppDatabase_Impl extends AppDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(6) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `username` TEXT NOT NULL, `password` TEXT NOT NULL)");
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `MyCities` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `city` TEXT NOT NULL, `user` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`user`) REFERENCES `users`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `users` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `username` TEXT NOT NULL, `password` TEXT NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `MyCities` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `city` TEXT NOT NULL, `user` INTEGER NOT NULL, `timestamp` INTEGER NOT NULL, FOREIGN KEY(`user`) REFERENCES `users`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )");
+        _db.execSQL("CREATE UNIQUE INDEX IF NOT EXISTS `index_MyCities_city_user` ON `MyCities` (`city`, `user`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cb4c589086da32307c77f5180e78976b')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fabae730dd3bd4860b4af737e14c769f')");
       }
 
       @Override
@@ -89,7 +90,7 @@ public final class AppDatabase_Impl extends AppDatabase {
       @Override
       public RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsUsers = new HashMap<String, TableInfo.Column>(3);
-        _columnsUsers.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUsers.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsUsers.put("username", new TableInfo.Column("username", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsUsers.put("password", new TableInfo.Column("password", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysUsers = new HashSet<TableInfo.ForeignKey>(0);
@@ -102,13 +103,14 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Found:\n" + _existingUsers);
         }
         final HashMap<String, TableInfo.Column> _columnsMyCities = new HashMap<String, TableInfo.Column>(4);
-        _columnsMyCities.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsMyCities.put("id", new TableInfo.Column("id", "INTEGER", false, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsMyCities.put("city", new TableInfo.Column("city", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsMyCities.put("user", new TableInfo.Column("user", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsMyCities.put("timestamp", new TableInfo.Column("timestamp", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysMyCities = new HashSet<TableInfo.ForeignKey>(1);
         _foreignKeysMyCities.add(new TableInfo.ForeignKey("users", "CASCADE", "NO ACTION",Arrays.asList("user"), Arrays.asList("id")));
-        final HashSet<TableInfo.Index> _indicesMyCities = new HashSet<TableInfo.Index>(0);
+        final HashSet<TableInfo.Index> _indicesMyCities = new HashSet<TableInfo.Index>(1);
+        _indicesMyCities.add(new TableInfo.Index("index_MyCities_city_user", true, Arrays.asList("city","user"), Arrays.asList("ASC","ASC")));
         final TableInfo _infoMyCities = new TableInfo("MyCities", _columnsMyCities, _foreignKeysMyCities, _indicesMyCities);
         final TableInfo _existingMyCities = TableInfo.read(_db, "MyCities");
         if (! _infoMyCities.equals(_existingMyCities)) {
@@ -118,7 +120,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "cb4c589086da32307c77f5180e78976b", "c545ed379f413298b9ea1844eb2c914d");
+    }, "fabae730dd3bd4860b4af737e14c769f", "2f625c00d0a9e929a09f57bd56ed0e49");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

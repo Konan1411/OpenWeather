@@ -1,3 +1,4 @@
+// AppDatabase.kt
 package com.example.weather.data
 
 import android.content.Context
@@ -7,55 +8,32 @@ import androidx.room.RoomDatabase
 import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 
-@Database(entities = [User::class, MyCities::class], version = 2)
+@Database(entities = [User::class, MyCities::class], version = 6)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun myCitiesDao(): MyCitiesDao
 
     companion object {
         @Volatile
-        private var instance: AppDatabase? = null
-
-        private fun buildDatabase(context: Context) =
-            Room.databaseBuilder(
-                context,
-                AppDatabase::class.java,
-                "mydatabase.db"
-            ).addMigrations(migration1_2).build()
+        private var INSTANCE: AppDatabase? = null
 
         fun getInstance(context: Context): AppDatabase {
-            return instance ?: synchronized(this) {
-                instance ?: buildDatabase(context).also { instance = it }
+            return INSTANCE ?: synchronized(this) {
+                val instance = Room.databaseBuilder(
+                    context.applicationContext,
+                    AppDatabase::class.java,
+                    "weather_database"
+                ).addMigrations(MIGRATION_5_6)
+                    .build()
+                INSTANCE = instance
+                instance
             }
         }
 
-        private val migration1_2 = object : Migration(1, 2) {
+        val MIGRATION_5_6 = object : Migration(5, 6) {
             override fun migrate(database: SupportSQLiteDatabase) {
-                // Create the new User table
-                database.execSQL("""
-                    CREATE TABLE IF NOT EXISTS `users` (
-                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-                        `username` TEXT NOT NULL,
-                        `password` TEXT NOT NULL
-                    )
-                """)
-
-                // Create the new MyCities table with the foreign key constraint
-                database.execSQL("""
-                    CREATE TABLE IF NOT EXISTS `MyCities_new` (
-                        `id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-                        `city` TEXT NOT NULL,
-                        `user` INTEGER NOT NULL,
-                        `timestamp` INTEGER NOT NULL,
-                        FOREIGN KEY(`user`) REFERENCES `users`(`id`) ON DELETE CASCADE
-                    )
-                """)
-
-                // Remove the old MyCities table
-                database.execSQL("DROP TABLE `MyCities`")
-
-                // Rename the new MyCities table to the original name
-                database.execSQL("ALTER TABLE `MyCities_new` RENAME TO `MyCities`")
+                database.execSQL("DROP INDEX IF EXISTS index_MyCities_city")
+                database.execSQL("CREATE UNIQUE INDEX index_MyCities_city_user ON MyCities(city, user)")
             }
         }
     }

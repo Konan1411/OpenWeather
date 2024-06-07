@@ -29,14 +29,21 @@
     <fragment
         android:id="@+id/settings"
         android:name="com.example.weather.ui.SettingsFragment"
-        android:label="@string/label_setting" />
+        android:label="@string/label_setting" >
+        <action
+            android:id="@+id/action_settingsFragment_to_ChangePasswordFragment"
+            app:destination="@id/changePassword" />
+    </fragment>
     <fragment
-        android:id="@+id/login"
+        android:id="@+id/action_login_logout"
         android:name="com.example.weather.ui.LoginFragment"
         android:label="Login">
         <action
             android:id="@+id/action_loginFragment_to_signUpFragment"
             app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/forecast_list" />
     </fragment>
 
 
@@ -46,8 +53,15 @@
         android:label="Sign Up">
         <action
             android:id="@+id/action_signUpFragment_to_loginFragment"
-            app:destination="@id/login" />
+            app:destination="@id/action_login_logout" />
     </fragment>
+
+    <fragment
+        android:id="@+id/changePassword"
+        android:name="com.example.weather.ui.ChangePasswordFragment"
+        android:label="Change password">
+    </fragment>
+
 
 
 </navigation>

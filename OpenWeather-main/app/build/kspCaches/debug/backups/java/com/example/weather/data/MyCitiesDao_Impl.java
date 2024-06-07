@@ -1,6 +1,7 @@
 package com.example.weather.data;
 
 import android.database.Cursor;
+import android.os.CancellationSignal;
 import androidx.room.CoroutinesRoom;
 import androidx.room.EntityDeletionOrUpdateAdapter;
 import androidx.room.EntityInsertionAdapter;
@@ -11,6 +12,7 @@ import androidx.room.util.DBUtil;
 import androidx.sqlite.db.SupportSQLiteStatement;
 import java.lang.Class;
 import java.lang.Exception;
+import java.lang.Integer;
 import java.lang.Object;
 import java.lang.Override;
 import java.lang.String;
@@ -36,12 +38,16 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
     this.__insertionAdapterOfMyCities = new EntityInsertionAdapter<MyCities>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `MyCities` (`id`,`city`,`user`,`timestamp`) VALUES (nullif(?, 0),?,?,?)";
+        return "INSERT OR ABORT INTO `MyCities` (`id`,`city`,`user`,`timestamp`) VALUES (?,?,?,?)";
       }
 
       @Override
       public void bind(SupportSQLiteStatement stmt, MyCities value) {
-        stmt.bindLong(1, value.getId());
+        if (value.getId() == null) {
+          stmt.bindNull(1);
+        } else {
+          stmt.bindLong(1, value.getId());
+        }
         if (value.getCity() == null) {
           stmt.bindNull(2);
         } else {
@@ -59,7 +65,11 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
 
       @Override
       public void bind(SupportSQLiteStatement stmt, MyCities value) {
-        stmt.bindLong(1, value.getId());
+        if (value.getId() == null) {
+          stmt.bindNull(1);
+        } else {
+          stmt.bindLong(1, value.getId());
+        }
       }
     };
   }
@@ -116,8 +126,12 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
           final List<MyCities> _result = new ArrayList<MyCities>(_cursor.getCount());
           while(_cursor.moveToNext()) {
             final MyCities _item;
-            final int _tmpId;
-            _tmpId = _cursor.getInt(_cursorIndexOfId);
+            final Integer _tmpId;
+            if (_cursor.isNull(_cursorIndexOfId)) {
+              _tmpId = null;
+            } else {
+              _tmpId = _cursor.getInt(_cursorIndexOfId);
+            }
             final String _tmpCity;
             if (_cursor.isNull(_cursorIndexOfCity)) {
               _tmpCity = null;
@@ -142,6 +156,60 @@ public final class MyCitiesDao_Impl implements MyCitiesDao {
         _statement.release();
       }
     });
+  }
+
+  @Override
+  public Object getCityForUser(final int userId, final String city,
+      final Continuation<? super MyCities> continuation) {
+    final String _sql = "SELECT * FROM MyCities WHERE user = ? AND city = ? LIMIT 1";
+    final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 2);
+    int _argIndex = 1;
+    _statement.bindLong(_argIndex, userId);
+    _argIndex = 2;
+    if (city == null) {
+      _statement.bindNull(_argIndex);
+    } else {
+      _statement.bindString(_argIndex, city);
+    }
+    final CancellationSignal _cancellationSignal = DBUtil.createCancellationSignal();
+    return CoroutinesRoom.execute(__db, false, _cancellationSignal, new Callable<MyCities>() {
+      @Override
+      public MyCities call() throws Exception {
+        final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
+        try {
+          final int _cursorIndexOfId = CursorUtil.getColumnIndexOrThrow(_cursor, "id");
+          final int _cursorIndexOfCity = CursorUtil.getColumnIndexOrThrow(_cursor, "city");
+          final int _cursorIndexOfUser = CursorUtil.getColumnIndexOrThrow(_cursor, "user");
+          final int _cursorIndexOfTimestamp = CursorUtil.getColumnIndexOrThrow(_cursor, "timestamp");
+          final MyCities _result;
+          if(_cursor.moveToFirst()) {
+            final Integer _tmpId;
+            if (_cursor.isNull(_cursorIndexOfId)) {
+              _tmpId = null;
+            } else {
+              _tmpId = _cursor.getInt(_cursorIndexOfId);
+            }
+            final String _tmpCity;
+            if (_cursor.isNull(_cursorIndexOfCity)) {
+              _tmpCity = null;
+            } else {
+              _tmpCity = _cursor.getString(_cursorIndexOfCity);
+            }
+            final int _tmpUser;
+            _tmpUser = _cursor.getInt(_cursorIndexOfUser);
+            final long _tmpTimestamp;
+            _tmpTimestamp = _cursor.getLong(_cursorIndexOfTimestamp);
+            _result = new MyCities(_tmpId,_tmpCity,_tmpUser,_tmpTimestamp);
+          } else {
+            _result = null;
+          }
+          return _result;
+        } finally {
+          _cursor.close();
+          _statement.release();
+        }
+      }
+    }, continuation);
   }
 
   public static List<Class<?>> getRequiredConverters() {

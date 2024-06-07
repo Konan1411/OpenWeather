@@ -40,9 +40,11 @@
     <string name="geo_uri">geo:%1$f,%2$f?z=%3$d</string>
     <string name="imperial_temp_display">F</string>
     <string name="imperial_wind_display">mph</string>
+    <string name="label_add">Add City</string>
     <string name="label_forecast_detail">Forecast Detail</string>
     <string name="label_forecast_list">Forecast List</string>
     <string name="label_login">Login</string>
+    <string name="label_logout">Logout</string>
     <string name="label_setting">Setting</string>
     <string name="label_sign_up">Sign Up</string>
     <string name="loading_error">Unable to fetch forecast data.  Error message: %1$s</string>
@@ -63,6 +65,8 @@
     <string name="pref_units_value_imperial">imperial</string>
     <string name="pref_units_value_metric">metric</string>
     <string name="pref_units_value_standard">standard</string>
+    <string name="pref_user_id">user_id</string>
+    <string name="pref_username">username</string>
     <string name="share_forecast_text">Weather forecast from %1$s for %2$s, %3$s: %4$s with a high of %5$s, a low of %6$s, and a %7$s chance of precipitation.</string>
     <string name="sign_up_button_text">Sign Up</string>
     <string name="standard_temp_display">K</string>

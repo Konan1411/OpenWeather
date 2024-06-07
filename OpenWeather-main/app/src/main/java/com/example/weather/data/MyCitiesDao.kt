@@ -21,4 +21,7 @@ interface MyCitiesDao {
 
     @Query("SELECT * FROM MyCities WHERE user = :userId")
     fun getCitiesForUser(userId: Int): Flow<List<MyCities>>
+
+    @Query("SELECT * FROM MyCities WHERE user = :userId AND city = :city LIMIT 1")
+    suspend fun getCityForUser(userId: Int, city: String): MyCities?
 }

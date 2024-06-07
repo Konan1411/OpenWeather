@@ -2996,7 +2996,9 @@ id action_container
 id action_context_bar
 id action_divider
 id action_image
+id action_loginFragment_to_mainFragment
 id action_loginFragment_to_signUpFragment
+id action_login_logout
 id action_map
 id action_menu_divider
 id action_menu_presenter
@@ -3004,12 +3006,14 @@ id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
 id action_settings
+id action_settingsFragment_to_ChangePasswordFragment
 id action_share
 id action_signUpFragment_to_loginFragment
 id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addCity
 id alertTitle
 id aligned
 id all
@@ -3042,6 +3046,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id buttonPanel
+id button_change_password
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3054,6 +3059,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id changePassword
 id checkbox
 id checked
 id chronometer
@@ -3117,6 +3123,8 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id edit_confirm_password
+id edit_new_password
 id edit_query
 id elastic
 id embed
@@ -3193,7 +3201,6 @@ id listMode
 id list_item
 id loading_indicator
 id locale
-id login
 id login_button
 id logo
 id ltr
@@ -3602,6 +3609,7 @@ layout abc_tooltip
 layout activity_forecast_detail
 layout activity_forecast_detail_fragment
 layout activity_main
+layout change_password
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3776,9 +3784,11 @@ string icon_content_description
 string imperial_temp_display
 string imperial_wind_display
 string item_view_role_description
+string label_add
 string label_forecast_detail
 string label_forecast_list
 string label_login
+string label_logout
 string label_setting
 string label_sign_up
 string loading_error
@@ -3902,6 +3912,8 @@ string pref_units_title
 string pref_units_value_imperial
 string pref_units_value_metric
 string pref_units_value_standard
+string pref_user_id
+string pref_username
 string preference_copied
 string search_menu_title
 string searchbar_scrolling_view_behavior

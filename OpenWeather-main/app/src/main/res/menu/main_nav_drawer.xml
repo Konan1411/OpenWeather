@@ -7,11 +7,15 @@
 
         </menu>
     </item>
-
     <item
-        android:id="@+id/login"
+        android:id="@+id/addCity"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="@string/label_add" />
+    <item
+        android:id="@+id/action_login_logout"
         android:icon="@drawable/user"
-        android:title="@string/label_login" />
+        android:title=""
+        />
     <item
         android:id="@+id/settings"
         android:title="@string/label_setting"

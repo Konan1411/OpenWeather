@@ -1404,6 +1404,7 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
+color backgroundColor
 color background_color
 color background_floating_material_dark
 color background_floating_material_light
@@ -1473,6 +1474,7 @@ color foreground_material_light
 color high_temp
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color hint_text_color
 color low_temp
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -2819,6 +2821,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable annuler
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2829,11 +2832,18 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bulle
+drawable canape
+drawable circle_background
+drawable delete_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable edit
+drawable female_user
+drawable form_background
 drawable ic_action_map
 drawable ic_action_settings
 drawable ic_action_share
@@ -2846,9 +2856,11 @@ drawable ic_baseline_umbrella_24
 drawable ic_baseline_umbrella_28
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_cloud_28
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_light
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2869,6 +2881,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable male_user
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2929,11 +2942,16 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable openweather_img
+drawable openweatherback
+drawable openweathericon
 drawable preference_list_divider_material
+drawable sun
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
+drawable verified
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -2985,6 +3003,7 @@ id accessibility_custom_action_9
 id actionDown
 id actionDownUp
 id actionUp
+id action_about
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3024,6 +3043,8 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appIcon
+id appTitle
 id arc
 id asConfigured
 id async
@@ -3072,6 +3093,7 @@ id closest
 id collapseActionView
 id compress
 id confirmPasswordEditText
+id confirmPasswordTextInputLayout
 id confirm_button
 id constraint
 id container
@@ -3149,9 +3171,11 @@ id fitXY
 id fixed
 id flip
 id floating
+id footer
 id forecast_detail
 id forecast_list
 id forever
+id formContainer
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3177,6 +3201,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3201,8 +3226,9 @@ id listMode
 id list_item
 id loading_indicator
 id locale
+id loginItem
 id login_button
-id logo
+id logoutItem
 id ltr
 id m3_side_sheet
 id main_nav_graph
@@ -3302,6 +3328,7 @@ id parentRelative
 id parent_matrix
 id password
 id passwordEditText
+id passwordTextInputLayout
 id password_toggle
 id path
 id pathRelative
@@ -3314,6 +3341,8 @@ id preferences_detail
 id preferences_header
 id preferences_sliding_pane_layout
 id pressed
+id privacyPolicy
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -3429,6 +3458,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id termsOfService
 id text
 id text2
 id textEnd
@@ -3436,6 +3466,7 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
+id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3451,6 +3482,7 @@ id titleDividerNoCustom
 id title_template
 id toggle
 id top
+id topAppBar
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3479,6 +3511,7 @@ id up
 id useLogo
 id username
 id usernameEditText
+id usernameTextInputLayout
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3713,8 +3746,13 @@ layout support_simple_spinner_dropdown_item
 menu activity_forecast_detail
 menu activity_main
 menu main_nav_drawer
+menu top_app_bar_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+mipmap ic_ok
+mipmap ic_ok_back
+mipmap ic_ok_foreground
+mipmap ic_ok_round
 navigation main_nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
@@ -3744,14 +3782,18 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_about
 string action_login_title
 string action_map_error
 string action_map_title
+string action_settings
 string action_settings_title
 string action_share_title
 string action_sign_up_title
 string androidx_startup
+string app_icon_desc
 string app_name
+string app_name_login
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
@@ -3794,6 +3836,7 @@ string label_sign_up
 string loading_error
 string login_button_text
 string logo_desc
+string logout
 string m3_sys_motion_easing_emphasized
 string m3_sys_motion_easing_emphasized_accelerate
 string m3_sys_motion_easing_emphasized_decelerate
@@ -3827,6 +3870,8 @@ string material_timepicker_minute
 string material_timepicker_pm
 string material_timepicker_select_time
 string material_timepicker_text_input_mode_description
+string me
+string menu_icon_desc
 string metric_temp_display
 string metric_wind_display
 string mtrl_badge_numberless_content_description
@@ -3915,6 +3960,8 @@ string pref_units_value_standard
 string pref_user_id
 string pref_username
 string preference_copied
+string privacy_policy
+string profile
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -3927,6 +3974,7 @@ string standard_temp_display
 string standard_wind_display
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string terms_of_service
 string username_hint
 string v7_preference_off
 string v7_preference_on
@@ -4577,6 +4625,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_MyApp
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

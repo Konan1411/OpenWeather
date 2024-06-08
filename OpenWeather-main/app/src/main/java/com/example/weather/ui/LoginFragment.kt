@@ -35,6 +35,8 @@ class LoginFragment : Fragment() {
         return inflater.inflate(R.layout.login_activity, container, false)
     }
 
+
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 

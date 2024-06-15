@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/forecast_list">
+
+    <fragment
+        android:id="@+id/forecast_list"
+        android:name="com.example.weather.ui.ForecastListFragment"
+        android:label="@string/label_forecast_list">
+        <action
+            android:id="@+id/navigate_to_forecast_detail"
+            app:destination="@id/forecast_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/forecast_detail"
+        android:name="com.example.weather.ui.ForecastDetailActivityFragment"
+        android:label="@string/label_forecast_detail">
+        <argument
+            android:name="forecast"
+            app:argType="com.example.weather.data.ForecastPeriod"/>
+        <argument
+            android:name="city"
+            app:argType="com.example.weather.data.ForecastCity"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.weather.ui.SettingsFragment"
+        android:label="@string/label_setting" >
+        <action
+            android:id="@+id/action_settingsFragment_to_ChangePasswordFragment"
+            app:destination="@id/changePassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/action_login_logout"
+        android:name="com.example.weather.ui.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@id/signUp" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/forecast_list" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/signUp"
+        android:name="com.example.weather.ui.SignUpFragment"
+        android:label="Sign Up">
+        <action
+            android:id="@+id/action_signUpFragment_to_loginFragment"
+            app:destination="@id/action_login_logout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/changePassword"
+        android:name="com.example.weather.ui.ChangePasswordFragment"
+        android:label="Change password">
+    </fragment>
+
+
+
+</navigation>

@@ -86,6 +86,7 @@ id nav_host_fragment
 id nav_view
 id navigate_to_forecast_detail
 id password
+id passwordContainer
 id passwordEditText
 id passwordTextInputLayout
 id privacyPolicy
@@ -111,6 +112,7 @@ id tv_pop
 id tv_time
 id tv_wind
 id username
+id usernameContainer
 id usernameEditText
 id usernameTextInputLayout
 layout activity_forecast_detail
@@ -120,6 +122,7 @@ layout change_password
 layout drawer_menu_item
 layout forecast_list_item
 layout forecast_list_screen
+layout layout
 layout login_activity
 layout sign_up_activity
 menu activity_forecast_detail
@@ -145,6 +148,7 @@ string app_icon_desc
 string app_name
 string app_name_login
 string confirm_password_hint
+string error_text
 string forecast_clouds
 string forecast_date
 string forecast_date_time

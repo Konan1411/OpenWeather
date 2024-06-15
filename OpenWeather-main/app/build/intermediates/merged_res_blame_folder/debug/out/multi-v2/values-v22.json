@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.weather.app-mergeDebugResources-52:/values-v22/values-v22.xml",
+            "outputFile": "com.example.weather.app-mergeDebugResources-76:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\konan\\.gradle\\caches\\transforms-3\\4a61f88850feb18f3557f5c16aa7a144\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-3\\4a61f88850feb18f3557f5c16aa7a144\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

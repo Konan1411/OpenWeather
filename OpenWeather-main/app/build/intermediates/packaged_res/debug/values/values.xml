@@ -36,6 +36,7 @@
     <string name="app_name">Weather</string>
     <string name="app_name_login">Weather - Login</string>
     <string name="confirm_password_hint">Confirm Password</string>
+    <string name="error_text">Login Error !</string>
     <string name="forecast_clouds">%1$d%%</string>
     <string name="forecast_date">%1$tb %1$te</string>
     <string name="forecast_date_time">%1$tb %1$te, %1$tl:%1$tM %1$tp</string>

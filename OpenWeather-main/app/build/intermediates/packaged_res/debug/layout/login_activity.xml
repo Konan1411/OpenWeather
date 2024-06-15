@@ -1,23 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/backgroundColor"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".MainActivity.kt">
 
-    <!-- Header avec barre de navigation et icône d'application -->
+    <!-- Barre de navigation supérieure avec icône de l'application -->
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="@drawable/form_background"
-        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.MaterialComponents.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
+        <!-- Icône de l'application -->
         <ImageView
             android:id="@+id/appIcon"
             android:layout_width="40dp"
@@ -31,22 +34,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Titre de l'application -->
         <TextView
             android:id="@+id/appTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="@string/app_name_login"
-            android:textColor="@color/black"
-            android:textSize="20sp"
             android:layout_marginStart="56dp"
-            app:layout_constraintStart_toEndOf="@id/appIcon"
+            android:text="@string/app_name_login"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/appIcon"
             app:layout_constraintTop_toTopOf="parent" />
 
     </com.google.android.material.appbar.MaterialToolbar>
 
-    <!-- Image et titre de l'application -->
+    <!-- Image de l'application -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="81dp"
@@ -57,64 +61,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/topAppBar" />
 
+    <!-- Titre de l'application -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Weather App 2024"
-        android:textColor="@color/black"
+        android:text="@string/app_name"
+        android:textColor="@android:color/black"
         android:textSize="24sp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <!-- Formulaire de saisie centré -->
-    <LinearLayout
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/formContainer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/form_background"
+        android:layout_width="369dp"
+        android:layout_height="432dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/white"
         android:elevation="8dp"
-        android:orientation="vertical"
         android:padding="24dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
         app:layout_constraintBottom_toTopOf="@id/footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintTop_toBottomOf="@id/textView">
 
         <!-- Champ de nom d'utilisateur -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/usernameContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/username_hint"
             app:hintTextColor="@color/hint_text_color">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/hint_text_color"
-                android:inputType="text"
-                android:padding="12dp" />
-
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Champ de mot de passe -->
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:hint="@string/password_hint"
             app:hintTextColor="@color/hint_text_color">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/hint_text_color"
-                android:inputType="textPassword"
-                android:padding="12dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,16 +124,8 @@
             android:textColor="@android:color/white" />
 
         <!-- Bouton d'inscription -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/sign_up_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@android:color/white"
-            android:elevation="4dp"
-            android:text="@string/sign_up_button_text"
-            android:textColor="@color/low_temp" />
 
+        <!-- Message d'erreur -->
         <TextView
             android:id="@+id/errorTextView"
             android:layout_width="wrap_content"
@@ -150,15 +135,46 @@
             android:textColor="@color/custom_red"
             android:textSize="14sp"
             android:visibility="gone" />
-    </LinearLayout>
 
-    <!-- Footer avec des petits liens -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sign_up_button"
+            android:layout_width="334dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="@android:color/white"
+            android:elevation="4dp"
+            android:text="@string/sign_up_button_text"
+            android:textColor="@color/low_temp"
+            app:layout_constraintEnd_toStartOf="@+id/usernameContainer"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:inputType="textPassword"
+            android:padding="12dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:inputType="text"
+            android:padding="12dp" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Footer avec des liens -->
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
+        android:layout_marginTop="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -180,4 +196,5 @@
             android:textColor="@color/purple_700"
             android:textSize="14sp" />
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

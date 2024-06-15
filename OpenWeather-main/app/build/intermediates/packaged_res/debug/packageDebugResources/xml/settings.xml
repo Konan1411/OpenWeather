@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/pref_category_forecast">
+
+        <ListPreference
+            android:title="@string/pref_units_title"
+            android:key="@string/pref_units_key"
+            android:dialogTitle="@string/pref_units_title"
+            android:entries="@array/pref_units_entries"
+            android:entryValues="@array/pref_units_values"
+            android:defaultValue="@string/pref_units_default_value"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Change Password"
+        android:key="change_password_category"
+        android:visible="false">
+
+        <Preference
+            android:title="Change Password"
+            android:key="change_password_key"
+            android:summary="Click to change password" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

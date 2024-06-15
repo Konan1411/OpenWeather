@@ -74,10 +74,19 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_of_service">Terms of use</string>
     <string name="me">Me</string>
-    <string name="app_name_login">Weather - Login</string>
+    <string name="app_name_login">LOGIN</string>
     <string name="profile">Profile</string>
     <string name="logout">Logout</string>
+    <string name="error_text">Login Error !</string>
 
-
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">Username or Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <string name="login_background">login background</string>
+    <string name="welcome_on_weather_app">Welcome on Weather App</string>
+    <string name="text_image">image</string>
+    <string name="name_hint">Name</string>
 
 </resources>

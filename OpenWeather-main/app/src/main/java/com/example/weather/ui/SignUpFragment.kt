@@ -25,17 +25,19 @@ class SignUpFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.sign_up_activity, container, false)
+        return inflater.inflate(R.layout.layout_register, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val usernameEditText = view.findViewById<EditText>(R.id.usernameEditText)
-        val passwordEditText = view.findViewById<EditText>(R.id.passwordEditText)
-        val confirmPasswordEditText = view.findViewById<EditText>(R.id.confirmPasswordEditText)
-        val signUpButton = view.findViewById<Button>(R.id.signUpButton)
-        val errorTextView = view.findViewById<TextView>(R.id.errorTextView)
+
+        val nameEditText = view.findViewById<EditText>(R.id.signName)
+        val usernameEditText = view.findViewById<EditText>(R.id.signUsername)
+        val passwordEditText = view.findViewById<EditText>(R.id.signPassword)
+        val confirmPasswordEditText = view.findViewById<EditText>(R.id.signConfPassword)
+        val signUpButton = view.findViewById<Button>(R.id.signButton)
+        val errorTextView = view.findViewById<TextView>(R.id.errorView)
 
         signUpButton.setOnClickListener {
             val username = usernameEditText.text.toString()

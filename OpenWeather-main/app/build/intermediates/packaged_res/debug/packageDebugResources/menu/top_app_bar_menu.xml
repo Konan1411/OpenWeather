@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Section "Me" avec sous-menu -->
+    <item
+        android:id="@+id/submenu_cities"
+        android:title="@string/me">
+        <menu>
+            <item
+                android:id="@+id/profile"
+                android:title="@string/profile" />
+            <item
+                android:id="@+id/logoutItem"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+
+    <!-- Option "Login" -->
+    <item
+        android:id="@+id/loginItem"
+        android:icon="@drawable/male_user"
+        android:title="@string/label_login"
+        app:showAsAction="ifRoom|withText" />
+
+    <!-- Option "Settings" -->
+    <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/edit"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom|withText" />
+
+    <!-- Option "About" -->
+    <item
+        android:id="@+id/action_about"
+        android:title="@string/action_about"
+        app:showAsAction="ifRoom|withText" />
+</menu>

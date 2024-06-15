@@ -1,0 +1,8 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <corners android:radius="100dp" /> <!-- Mettez une valeur assez grande pour un cercle complet -->
+
+    <solid android:color="@android:color/white" /> <!-- Couleur de fond de l'arrière-plan -->
+
+</shape>

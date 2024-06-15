@@ -1,0 +1,390 @@
+[
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xhdpi_ic_action_map.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xhdpi\\ic_action_map.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xxhdpi_ic_action_share.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xxhdpi\\ic_action_share.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_ok_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_ok_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_canape.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\canape.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_ok.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_ok.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_ok_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_ok_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xhdpi_ic_action_share.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xhdpi\\ic_action_share.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_ok_back.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_ok_back.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xxhdpi_ic_action_settings.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xxhdpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_baseline_navigation_24.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_baseline_navigation_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_ok_foreground.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_ok_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_form_background.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\form_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_login_activity.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\login_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_ok_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_ok_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_layout_login.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\layout_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_baseline_air_28.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_baseline_air_28.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_ok_foreground.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_ok_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_ok_back.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_ok_back.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_user.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\user.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_ok_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_ok_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_drawer_menu_item.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\drawer_menu_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-mdpi_ic_action_share.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-mdpi\\ic_action_share.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-anydpi-v26_ic_ok_round.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-anydpi-v26\\ic_ok_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_male_user.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\male_user.png"
+    },
+    {
+        "merged": "com.example.weather.app-debug-53:/layout_login_activity.xml.flat",
+        "source": "com.example.weather.app-main-55:/layout/login_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\navigation_main_nav_graph.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\navigation\\main_nav_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-anydpi_ic_action_settings.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-anydpi\\ic_action_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_outline_cloud_28.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_outline_cloud_28.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_openweatherback.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\openweatherback.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_annuler.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\annuler.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_ok.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_ok.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_baseline_umbrella_28.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_baseline_umbrella_28.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_activity_forecast_detail_fragment.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\activity_forecast_detail_fragment.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_cloud_28.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_cloud_28.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_delete_icon.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\delete_icon.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_activity_forecast_detail.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\activity_forecast_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\xml_settings.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\xml\\settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-anydpi-v33_ic_launcher.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-anydpi-v33\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-hdpi_ic_action_share.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-hdpi\\ic_action_share.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_female_user.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\female_user.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_forecast_list_item.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\forecast_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_layout_register.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\layout_register.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_openweathericon.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\openweathericon.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xxhdpi_ic_action_map.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xxhdpi\\ic_action_map.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_baseline_thermostat_40.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_baseline_thermostat_40.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_openweather_img.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\openweather_img.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_ok_back.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_ok_back.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_light.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_light.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-hdpi_ic_action_settings.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-hdpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\menu_top_app_bar_menu.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\menu\\top_app_bar_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_forecast_list_screen.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\forecast_list_screen.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\menu_main_nav_drawer.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\menu\\main_nav_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_bulle.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\bulle.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\menu_activity_main.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\menu\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_verified.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\verified.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_ok_foreground.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_ok_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_edit.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\edit.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_sun.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\sun.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_ok.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_ok.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\menu_activity_forecast_detail.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\menu\\activity_forecast_detail.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable__000_f_314562910_ka6k0bb2z8u7ajqwzqos8abdg8wsgrmq.jpg.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\_000_f_314562910_ka6k0bb2z8u7ajqwzqos8abdg8wsgrmq.jpg"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_baseline_umbrella_24.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_baseline_umbrella_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xhdpi_ic_ok_back.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xhdpi\\ic_ok_back.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_ok_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_ok_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_ic_login_bk.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\ic_login_bk.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxhdpi_ic_ok_foreground.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxhdpi\\ic_ok_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_ok.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_ok.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\layout_change_password.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\layout\\change_password.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-xxxhdpi_ic_ok_back.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-xxxhdpi\\ic_ok_back.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_login_shape_bk.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\login_shape_bk.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-xhdpi_ic_action_settings.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-xhdpi\\ic_action_settings.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-anydpi_ic_action_share.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-anydpi\\ic_action_share.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_ok_foreground.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_ok_foreground.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-hdpi_ic_ok.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-hdpi\\ic_ok.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-mdpi_ic_action_map.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-mdpi\\ic_action_map.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable_circle_background.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable\\circle_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-hdpi_ic_action_map.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-hdpi\\ic_action_map.png"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-anydpi_ic_action_map.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-anydpi\\ic_action_map.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\mipmap-anydpi-v26_ic_ok.xml.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\mipmap-anydpi-v26\\ic_ok.xml"
+    },
+    {
+        "merged": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-debug-53:\\drawable-mdpi_ic_action_settings.png.flat",
+        "source": "C:\\Users\\david\\.gradle\\daemon\\8.6\\com.example.weather.app-main-55:\\drawable-mdpi\\ic_action_settings.png"
+    }
+]

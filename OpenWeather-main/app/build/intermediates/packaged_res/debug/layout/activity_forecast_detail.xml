@@ -1,154 +1,227 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
     tools:context=".ui.ForecastDetailActivity">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="16dp">
 
-        <ImageView
-            android:id="@+id/iv_forecast_icon"
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            app:layout_constraintBottom_toTopOf="@id/tv_forecast_date"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView2"
+            android:layout_width="0dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/item_frame"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/tv_forecast_city"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline2"
+            <ImageView
+                android:id="@+id/iv_forecast_icon"
+                android:layout_width="135dp"
+                android:layout_height="132dp"
+                android:layout_marginStart="102dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="101dp"
+                android:scaleType="centerInside"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.008" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_forecast_description"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginStart="95dp"
+                android:layout_marginEnd="95dp"
+                android:layout_marginBottom="61dp"
+                android:text="Detailed Forecast"
+                android:textAppearance="?attr/textAppearanceHeadline5"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btn_expand_menu"
+                android:layout_width="49dp"
+                android:layout_height="44dp"
+                android:layout_marginEnd="28dp"
+                android:layout_marginBottom="200dp"
+                android:background="@drawable/form_background"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="+"
+                android:textAppearance="?attr/textAppearanceButton"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView3"
+            android:layout_width="0dp"
+            android:layout_height="81dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/item_frame"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/iv_forecast_icon"
-            app:layout_constraintBottom_toTopOf="@id/tv_forecast_date"/>
-
-        <TextView
-            android:id="@+id/tv_forecast_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?attr/textAppearanceHeadline5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_forecast_city" />
-
-        <TextView
-            android:id="@id/tv_low_temp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.CS492Weather.LowTempLarge"
-            app:drawableStartCompat="@drawable/ic_baseline_thermostat_40"
-            app:drawableTint="@color/low_temp"
-            app:layout_constraintEnd_toStartOf="@id/tv_high_temp"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_forecast_date" />
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
-        <TextView
-            android:id="@id/tv_high_temp"
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_forecast_date"
+                android:layout_width="0dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="146dp"
+                android:layout_marginBottom="12dp"
+                android:text="Forecast Date"
+                android:textAppearance="?attr/textAppearanceSubtitle1"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_forecast_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:text="City Name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView4"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="@style/TextAppearance.CS492Weather.HighTempLarge"
-            app:drawableStartCompat="@drawable/ic_baseline_thermostat_40"
-            app:drawableTint="@color/high_temp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toEndOf="@+id/tv_low_temp"
-            app:layout_constraintTop_toBottomOf="@id/tv_forecast_date" />
-
-        <androidx.constraintlayout.widget.Barrier
-            android:id="@+id/barrier_temps_bottom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="bottom"
-            app:constraint_referenced_ids="tv_high_temp,tv_low_temp" />
-
-        <TextView
-            android:id="@+id/tv_pop"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            app:drawableStartCompat="@drawable/ic_baseline_umbrella_28"
-            app:drawableTint="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/barrier_conditions_bottom"
-            app:layout_constraintEnd_toStartOf="@+id/tv_clouds"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/barrier_temps_bottom"/>
-
-        <TextView
-            android:id="@+id/tv_clouds"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            app:drawableStartCompat="@drawable/ic_outline_cloud_28"
-            android:drawablePadding="4dp"
-            app:drawableTint="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/barrier_conditions_bottom"
-            app:layout_constraintEnd_toStartOf="@+id/tv_wind"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@id/tv_pop"
-            app:layout_constraintTop_toBottomOf="@id/barrier_temps_bottom"/>
-
-        <TextView
-            android:id="@+id/tv_wind"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
-            android:textSize="24sp"
-            android:textColor="@color/black"
-            app:drawableStartCompat="@drawable/ic_baseline_air_28"
-            app:drawableTint="@color/black"
-            app:layout_constraintBottom_toTopOf="@id/barrier_conditions_bottom"
-            app:layout_constraintEnd_toStartOf="@id/iv_wind_dir"
-            app:layout_constraintHorizontal_bias="1"
-            app:layout_constraintStart_toStartOf="@id/tv_pop"
-            app:layout_constraintTop_toBottomOf="@id/barrier_temps_bottom"/>
-
-        <ImageView
-            android:id="@+id/iv_wind_dir"
-            android:layout_width="20sp"
-            android:layout_height="20sp"
-            android:src="@drawable/ic_baseline_navigation_24"
-            app:tint="@color/black"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_wind"
-            app:layout_constraintBottom_toBottomOf="@id/tv_wind"/>
-
-        <androidx.constraintlayout.widget.Barrier
-            android:id="@+id/barrier_conditions_bottom"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:barrierDirection="bottom"
-            app:constraint_referenced_ids="tv_pop,tv_clouds" />
-
-        <TextView
-            android:id="@+id/tv_forecast_description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:textAppearance="?attr/textAppearanceHeadline4"
-            app:layout_constraintTop_toBottomOf="@id/barrier_conditions_bottom"
+            android:layout_height="186dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/form_background"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/cardView5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/cardView3">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_clouds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_outline_cloud_28"
+                android:drawablePadding="8dp"
+                android:text="Clouds"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_wind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_baseline_air_28"
+                android:drawablePadding="8dp"
+                android:text="Wind"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_clouds" />
+
+            <ImageView
+                android:id="@+id/iv_wind_dir"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/ic_baseline_navigation_24"
+                android:visibility="visible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_clouds"
+                app:tint="?attr/colorOnBackground"
+                tools:visibility="visible" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_pop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_baseline_umbrella_28"
+                android:drawablePadding="8dp"
+                android:text="Precipitation"
+                android:textAppearance="?attr/textAppearanceBody1"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_wind" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView5"
+            android:layout_width="0dp"
+            android:layout_height="186dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/form_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cardView4"
+            app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_high_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_baseline_thermostat_40"
+                android:drawablePadding="8dp"
+                android:text="High Temp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/tv_low_temp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_baseline_thermostat_40"
+                android:drawablePadding="8dp"
+                android:text="Low Temp"
+                android:textAppearance="?attr/textAppearanceHeadline6"
+                android:textColor="?attr/colorOnBackground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_high_temp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

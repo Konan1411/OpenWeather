@@ -15,23 +15,8 @@
         </menu>
     </item>
 
-    <!-- Option "Login" -->
-    <item
-        android:id="@+id/loginItem"
-        android:icon="@drawable/male_user"
-        android:title="@string/label_login"
-        app:showAsAction="ifRoom|withText" />
-
-    <!-- Option "Settings" -->
-    <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/edit"
-        android:title="@string/action_settings"
-        app:showAsAction="ifRoom|withText" />
-
-    <!-- Option "About" -->
     <item
         android:id="@+id/action_about"
-        android:title="@string/action_about"
+        android:title="@string/me"
         app:showAsAction="ifRoom|withText" />
 </menu>

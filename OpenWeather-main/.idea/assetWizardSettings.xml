@@ -92,7 +92,8 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\res\drawable\icons\icons8-ok-94.png" />
+                                                <entry key="imagePath" value="C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\res\drawable\openweathericon.png" />
+                                                <entry key="scalingPercent" value="81" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -124,8 +125,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="backgroundLayerName" value="ic_ok_back" />
-                                      <entry key="outputName" value="ic_ok" />
+                                      <entry key="outputName" value="ic_weather_launcher" />
                                     </map>
                                   </option>
                                 </PersistentState>

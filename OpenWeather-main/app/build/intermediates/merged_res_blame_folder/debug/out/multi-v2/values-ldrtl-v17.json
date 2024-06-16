@@ -4,7 +4,7 @@
             "outputFile": "com.example.weather.app-mergeDebugResources-52:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Christophe\\.gradle\\caches\\transforms-3\\8d2b1285ab896cb366caefd410cfc983\\transformed\\material-1.8.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-3\\8d2b1285ab896cb366caefd410cfc983\\transformed\\material-1.8.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -17,4 +17,6 @@
     <color name="custom_red">#B00020</color>
 
     <color name="hint_text_color">#A0A0A0</color>
+    <color name="colorPrimary">#6200EE</color>
+
 </resources>

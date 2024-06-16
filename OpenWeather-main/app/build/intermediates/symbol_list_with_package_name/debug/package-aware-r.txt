@@ -1424,6 +1424,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color colorPrimary
 color custom_red
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -2821,7 +2822,6 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
-drawable annuler
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -2832,10 +2832,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
-drawable bulle
-drawable canape
 drawable circle_background
-drawable delete_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2857,10 +2854,10 @@ drawable ic_baseline_umbrella_28
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
 drawable ic_cloud_28
+drawable ic_error_outline
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_light
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -2870,6 +2867,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_outline_cloud_28
 drawable ic_search_black_24
+drawable item_frame
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -2951,7 +2949,6 @@ drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable user
-drawable verified
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3054,8 +3051,6 @@ id autoCompleteToEnd
 id autoCompleteToStart
 id barrier
 id barrier1
-id barrier_conditions_bottom
-id barrier_temps_bottom
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -3066,11 +3061,17 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_expand_menu
 id buttonPanel
 id button_change_password
 id cache_measures
 id callMeasure
 id cancel_button
+id cardView
+id cardView2
+id cardView3
+id cardView4
+id cardView5
 id carryVelocity
 id center
 id centerCrop
@@ -3093,7 +3094,6 @@ id closest
 id collapseActionView
 id compress
 id confirmPasswordEditText
-id confirmPasswordTextInputLayout
 id confirm_button
 id constraint
 id container
@@ -3177,6 +3177,7 @@ id forecast_list
 id forever
 id formContainer
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3201,7 +3202,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3226,7 +3226,6 @@ id listMode
 id list_item
 id loading_indicator
 id locale
-id loginItem
 id login_button
 id logoutItem
 id ltr
@@ -3328,7 +3327,6 @@ id parentRelative
 id parent_matrix
 id password
 id passwordEditText
-id passwordTextInputLayout
 id password_toggle
 id path
 id pathRelative
@@ -3466,7 +3464,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3499,11 +3496,14 @@ id tv_forecast_city
 id tv_forecast_date
 id tv_forecast_description
 id tv_high_temp
+id tv_humidity
 id tv_loading_error
 id tv_low_temp
 id tv_pop
+id tv_temperature
 id tv_time
 id tv_wind
+id tv_wind_speed
 id unchecked
 id uniform
 id unlabeled
@@ -3511,7 +3511,6 @@ id up
 id useLogo
 id username
 id usernameEditText
-id usernameTextInputLayout
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3663,6 +3662,7 @@ layout drawer_menu_item
 layout expand_button
 layout forecast_list_item
 layout forecast_list_screen
+layout fragment_weather_info_bottom_sheet
 layout image_frame
 layout login_activity
 layout m3_alert_dialog
@@ -3753,6 +3753,10 @@ mipmap ic_ok
 mipmap ic_ok_back
 mipmap ic_ok_foreground
 mipmap ic_ok_round
+mipmap ic_weather_launcher
+mipmap ic_weather_launcher_background
+mipmap ic_weather_launcher_foreground
+mipmap ic_weather_launcher_round
 navigation main_nav_graph
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

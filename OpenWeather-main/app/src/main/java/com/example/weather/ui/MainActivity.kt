@@ -74,7 +74,8 @@ class MainActivity : AppCompatActivity() {
 
         locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         sessionManager = SessionManager(this)
-
+        
+    if (sessionManager.isUserLoggedIn()) {
         // Check for location permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             // Request location permission
@@ -83,7 +84,7 @@ class MainActivity : AppCompatActivity() {
             // Permission already granted, request location updates
             requestLocationUpdates()
         }
-
+    }
         val navHostFragment = supportFragmentManager.findFragmentById(
             R.id.nav_host_fragment
         ) as NavHostFragment
@@ -104,10 +105,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun requestLocationUpdates() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, locationListener)
+    if (sessionManager.isUserLoggedIn() && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, locationListener)
         }
     }
+
 
     private fun getCityName(lat: Double, lon: Double): String {
         val geocoder = Geocoder(this)

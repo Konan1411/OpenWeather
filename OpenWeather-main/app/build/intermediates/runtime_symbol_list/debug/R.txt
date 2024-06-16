@@ -3225,9 +3225,9 @@ int id listMode 0x7f09010e
 int id list_item 0x7f09010f
 int id loading_indicator 0x7f090110
 int id locale 0x7f090111
-int id loginItem 0x7f090242
+int id loginItem 0x7f090112
 int id login_button 0x7f090113
-int id logoutItem 0x7f090243
+int id logoutItem 0x7f090114
 int id ltr 0x7f090115
 int id m3_side_sheet 0x7f090116
 int id main_nav_graph 0x7f090117

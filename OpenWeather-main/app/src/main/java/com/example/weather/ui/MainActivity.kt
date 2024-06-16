@@ -29,22 +29,60 @@ import com.example.weather.util.SessionManager
 import com.google.android.material.appbar.MaterialToolbar
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.snackbar.Snackbar
+import android.Manifest
+import android.content.pm.PackageManager
+import android.location.Geocoder
+import android.location.Location
+import android.location.LocationListener
+import android.location.LocationManager
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
+import android.content.Context
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
+import java.util.Locale
 
 const val OPENWEATHER_APPID = BuildConfig.OPENWEATHER_API_KEY
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var locationManager: LocationManager
     private lateinit var appBarConfig: AppBarConfiguration
     private lateinit var sessionManager: SessionManager
 
     private val viewModel: FiveDayForecastViewModel by viewModels()
     private val myCitiesViewModel: MyCitiesViewModel by viewModels()
 
+    private val locationListener = object : LocationListener {
+        override fun onLocationChanged(location: Location) {
+            // Get the city name based on the location
+            val cityName = getCityName(location.latitude, location.longitude)
+            // Add the city to the cities list
+            addCityToDatabase(cityName)
+        }
+
+        override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}
+        override fun onProviderEnabled(provider: String) {}
+        override fun onProviderDisabled(provider: String) {}
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         sessionManager = SessionManager(this)
+
+        // Check for location permission
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // Request location permission
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
+        } else {
+            // Permission already granted, request location updates
+            requestLocationUpdates()
+        }
 
         val navHostFragment = supportFragmentManager.findFragmentById(
             R.id.nav_host_fragment
@@ -63,6 +101,41 @@ class MainActivity : AppCompatActivity() {
         addCityToDrawer()
 
 
+    }
+
+    private fun requestLocationUpdates() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0f, locationListener)
+        }
+    }
+
+    private fun getCityName(lat: Double, lon: Double): String {
+        val geocoder = Geocoder(this)
+        val addresses = geocoder.getFromLocation(lat, lon, 1)
+        return if (addresses.isNullOrEmpty()) {
+            addresses?.get(0)?.locality ?: "Belfort, France"
+        } else {
+            "Belfort, France"
+        }
+    }
+
+    private fun addCityToDatabase(cityName: String) {
+        val userId = sessionManager.getUserId()
+        val currentTimeMillis = System.currentTimeMillis()
+        val myCity = MyCities(null, cityName, userId, currentTimeMillis)
+        myCitiesViewModel.addMyCities(myCity)
+    }
+
+    override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+        if (requestCode == 1 && grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+            requestLocationUpdates()
+        } else {
+            AlertDialog.Builder(this)
+                .setMessage("Location permission is required to add your city.")
+                .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+                .show()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

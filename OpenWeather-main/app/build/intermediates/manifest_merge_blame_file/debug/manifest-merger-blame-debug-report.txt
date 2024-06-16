@@ -43,72 +43,71 @@
 27-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:12:9-41
 28        android:supportsRtl="true"
 28-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:13:9-35
-29        android:testOnly="true"
-30        android:theme="@style/Theme.CS492Weather" >
-30-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:14:9-50
-31        <activity
-31-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:17:9-26:20
-32            android:name="com.example.weather.ui.MainActivity"
-32-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:18:13-63
-33            android:exported="true"
-33-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:20:13-36
-34            android:launchMode="singleTop" >
-34-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:19:13-43
-35            <intent-filter>
-35-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:21:13-25:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:22:17-69
-36-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:22:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:24:17-77
-38-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:24:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <service
-42-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
-43            android:name="androidx.room.MultiInstanceInvalidationService"
-43-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
-44            android:directBootAware="true"
-44-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
-45            android:exported="false" />
-45-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
-46
-47        <uses-library
-47-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-48            android:name="androidx.window.extensions"
-48-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-49            android:required="false" />
-49-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-50        <uses-library
-50-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-51            android:name="androidx.window.sidecar"
-51-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-52            android:required="false" />
-52-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-53
-54        <provider
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-55            android:name="androidx.startup.InitializationProvider"
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-56            android:authorities="com.example.weather.androidx-startup"
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-57            android:exported="false" >
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-58            <meta-data
-58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-60                android:value="androidx.startup" />
-60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-61            <meta-data
-61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-63                android:value="androidx.startup" />
-63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-64        </provider>
-65    </application>
-66
-67</manifest>
+29        android:theme="@style/Theme.CS492Weather" >
+29-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:14:9-50
+30        <activity
+30-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:17:9-26:20
+31            android:name="com.example.weather.ui.MainActivity"
+31-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:18:13-63
+32            android:exported="true"
+32-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:20:13-36
+33            android:launchMode="singleTop" >
+33-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:19:13-43
+34            <intent-filter>
+34-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:21:13-25:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:22:17-69
+35-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:22:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:24:17-77
+37-->C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\src\main\AndroidManifest.xml:24:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <service
+41-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:24:9-28:63
+42            android:name="androidx.room.MultiInstanceInvalidationService"
+42-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:25:13-74
+43            android:directBootAware="true"
+43-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:26:13-43
+44            android:exported="false" />
+44-->[androidx.room:room-runtime:2.5.0] C:\Users\david\.gradle\caches\transforms-3\23af9940e2206bb67b1e8c35a55c2a86\transformed\room-runtime-2.5.0\AndroidManifest.xml:27:13-37
+45
+46        <uses-library
+46-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+47            android:name="androidx.window.extensions"
+47-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+48            android:required="false" />
+48-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+49        <uses-library
+49-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+50            android:name="androidx.window.sidecar"
+50-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+51            android:required="false" />
+51-->[androidx.window:window:1.0.0] C:\Users\david\.gradle\caches\transforms-3\5d4f7937b759596d322dd15269a55621\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+52
+53        <provider
+53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+54            android:name="androidx.startup.InitializationProvider"
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+55            android:authorities="com.example.weather.androidx-startup"
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+56            android:exported="false" >
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+57            <meta-data
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+58                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+59                android:value="androidx.startup" />
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\david\.gradle\caches\transforms-3\8b2a1fa6453ba1bea0f783db09eb35ef\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+60            <meta-data
+60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+61                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+62                android:value="androidx.startup" />
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\david\.gradle\caches\transforms-3\dbcc225e4b496ea50532123f3a06478e\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+63        </provider>
+64    </application>
+65
+66</manifest>

@@ -13,4 +13,7 @@
         <item name="android:statusBarColor">@color/black</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="AppTitleTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font.google_sans_light</item>
+    </style>
 </resources>

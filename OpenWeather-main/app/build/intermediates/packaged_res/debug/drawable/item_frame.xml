@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Couleur de fond du cadre -->
+    <solid android:color="#80ADD8E6" /> <!-- Utilisation de la couleur bleu pâle avec une opacité de 50% -->
+
+    <!-- Coins arrondis du cadre -->
+    <corners
+        android:radius="8dp" /> <!-- Rayon des coins arrondis de 8dp -->
+
+</shape>

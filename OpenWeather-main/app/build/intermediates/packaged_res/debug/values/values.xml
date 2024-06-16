@@ -34,7 +34,7 @@
     <string name="action_sign_up_title">Sign Up</string>
     <string name="app_icon_desc">WeatherApp</string>
     <string name="app_name">Weather</string>
-    <string name="app_name_login">Weather - Login</string>
+    <string name="app_name_login">Weather App</string>
     <string name="confirm_password_hint">Confirm Password</string>
     <string name="forecast_clouds">%1$d%%</string>
     <string name="forecast_date">%1$tb %1$te</string>
@@ -78,12 +78,21 @@
     <string name="pref_username">username</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="profile">Profile</string>
+    <string name="recommendation_clear">Il fait beau, profitez du soleil!</string>
+    <string name="recommendation_cloudy">Le temps est nuageux, peut-être une balade?</string>
+    <string name="recommendation_default">Préparez-vous à tout type de météo.</string>
+    <string name="recommendation_rain">Il pleut, prenez un parapluie.</string>
+    <string name="recommendation_snow">Il neige, sortez vos équipements de ski!</string>
     <string name="share_forecast_text">Weather forecast from %1$s for %2$s, %3$s: %4$s with a high of %5$s, a low of %6$s, and a %7$s chance of precipitation.</string>
     <string name="sign_up_button_text">Sign Up</string>
     <string name="standard_temp_display">K</string>
     <string name="standard_wind_display">m/s</string>
+    <string name="temperature">Température: %1$.1f°C</string>
     <string name="terms_of_service">Terms of use</string>
     <string name="username_hint">Username</string>
+    <style name="AppTitleTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:fontFamily">@font.google_sans_light</item>
+    </style>
     <style name="TextAppearance.CS492Weather.HighTempLarge" parent="TextAppearance.CS492Weather.HighTempSmall">
         <item name="android:textSize">32sp</item>
     </style>

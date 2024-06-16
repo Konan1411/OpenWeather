@@ -8,10 +8,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/form_background"
+        android:background="@drawable/item_frame"
         android:orientation="horizontal"
         android:padding="8dp">
 
+        <!-- Date TextView -->
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
@@ -21,6 +22,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Time TextView -->
         <TextView
             android:id="@+id/tv_time"
             android:layout_width="wrap_content"
@@ -30,6 +32,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_date" />
 
+        <!-- Forecast Icon ImageView -->
         <ImageView
             android:id="@+id/iv_forecast_icon"
             android:layout_width="72dp"
@@ -39,6 +42,7 @@
             app:layout_constraintEnd_toStartOf="@id/barrier1"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Pop TextView -->
         <TextView
             android:id="@+id/tv_pop"
             android:layout_width="wrap_content"
@@ -51,6 +55,7 @@
             app:layout_constraintEnd_toStartOf="@id/iv_forecast_icon"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- High Temperature TextView -->
         <TextView
             android:id="@+id/tv_high_temp"
             android:layout_width="wrap_content"
@@ -60,6 +65,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Low Temperature TextView -->
         <TextView
             android:id="@+id/tv_low_temp"
             android:layout_width="wrap_content"
@@ -69,12 +75,29 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tv_high_temp" />
 
+        <!-- Barrier for TextViews alignment -->
         <androidx.constraintlayout.widget.Barrier
             android:id="@+id/barrier1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:barrierDirection="start"
             app:constraint_referenced_ids="tv_high_temp,tv_low_temp" />
+
+        <!-- Button to Expand Menu -->
+        <Button
+            android:id="@+id/btn_expand_menu"
+            android:layout_width="51dp"
+            android:layout_height="46dp"
+            android:layout_marginEnd="224dp"
+            android:background="@drawable/form_background"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="+"
+            android:textAppearance="?attr/textAppearanceButton"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -2870,6 +2870,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_outline_cloud_28
 drawable ic_search_black_24
+drawable item_frame
 drawable m3_appbar_background
 drawable m3_avd_hide_password
 drawable m3_avd_show_password
@@ -3066,11 +3067,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btn_expand_menu
 id buttonPanel
 id button_change_password
 id cache_measures
 id callMeasure
 id cancel_button
+id cardView
 id carryVelocity
 id center
 id centerCrop
@@ -3093,7 +3096,6 @@ id closest
 id collapseActionView
 id compress
 id confirmPasswordEditText
-id confirmPasswordTextInputLayout
 id confirm_button
 id constraint
 id container
@@ -3177,6 +3179,7 @@ id forecast_list
 id forever
 id formContainer
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3201,7 +3204,6 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3226,7 +3228,6 @@ id listMode
 id list_item
 id loading_indicator
 id locale
-id loginItem
 id login_button
 id logoutItem
 id ltr
@@ -3328,7 +3329,6 @@ id parentRelative
 id parent_matrix
 id password
 id passwordEditText
-id passwordTextInputLayout
 id password_toggle
 id path
 id pathRelative
@@ -3466,7 +3466,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3499,11 +3498,14 @@ id tv_forecast_city
 id tv_forecast_date
 id tv_forecast_description
 id tv_high_temp
+id tv_humidity
 id tv_loading_error
 id tv_low_temp
 id tv_pop
+id tv_temperature
 id tv_time
 id tv_wind
+id tv_wind_speed
 id unchecked
 id uniform
 id unlabeled
@@ -3511,7 +3513,6 @@ id up
 id useLogo
 id username
 id usernameEditText
-id usernameTextInputLayout
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3663,6 +3664,7 @@ layout drawer_menu_item
 layout expand_button
 layout forecast_list_item
 layout forecast_list_screen
+layout fragment_weather_info_bottom_sheet
 layout image_frame
 layout login_activity
 layout m3_alert_dialog
@@ -3962,6 +3964,11 @@ string pref_username
 string preference_copied
 string privacy_policy
 string profile
+string recommendation_clear
+string recommendation_cloudy
+string recommendation_default
+string recommendation_rain
+string recommendation_snow
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -3974,6 +3981,7 @@ string standard_temp_display
 string standard_wind_display
 string status_bar_notification_info_overflow
 string summary_collapsed_preference_list
+string temperature
 string terms_of_service
 string username_hint
 string v7_preference_off
@@ -3987,6 +3995,7 @@ style Animation_Design_BottomSheetDialog
 style Animation_Material3_BottomSheetDialog
 style Animation_Material3_SideSheetDialog
 style Animation_MaterialComponents_BottomSheetDialog
+style AppTitleTextStyle
 style Base_AlertDialog_AppCompat
 style Base_AlertDialog_AppCompat_Light
 style Base_Animation_AppCompat_Dialog

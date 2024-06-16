@@ -74,10 +74,15 @@
     <string name="privacy_policy">Privacy Policy</string>
     <string name="terms_of_service">Terms of use</string>
     <string name="me">Me</string>
-    <string name="app_name_login">Weather - Login</string>
+    <string name="app_name_login">Weather App</string>
     <string name="profile">Profile</string>
     <string name="logout">Logout</string>
 
-
+    <string name="recommendation_clear">Il fait beau, profitez du soleil!</string>
+    <string name="recommendation_rain">Il pleut, prenez un parapluie.</string>
+    <string name="recommendation_cloudy">Le temps est nuageux, peut-être une balade?</string>
+    <string name="recommendation_snow">Il neige, sortez vos équipements de ski!</string>
+    <string name="recommendation_default">Préparez-vous à tout type de météo.</string>
+    <string name="temperature">Température: %1$.1f°C</string>
 
 </resources>

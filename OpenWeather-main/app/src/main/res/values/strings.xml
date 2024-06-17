@@ -54,7 +54,7 @@
 
     <string name="label_forecast_list">Forecast List</string>
     <string name="label_forecast_detail">Forecast Detail</string>
-    <string name="label_setting">Setting</string>
+    <string name="label_setting">Settings</string>
     <string name="label_login">Login</string>
     <string name="label_sign_up">Sign Up</string>
     <string name="label_add">Add City</string>

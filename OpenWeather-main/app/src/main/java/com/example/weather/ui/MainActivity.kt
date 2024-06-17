@@ -74,35 +74,39 @@ class MainActivity : AppCompatActivity() {
 
         locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
         sessionManager = SessionManager(this)
-        
-    if (sessionManager.isUserLoggedIn()) {
-        // Check for location permission
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // Request location permission
-            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
-        } else {
-            // Permission already granted, request location updates
-            requestLocationUpdates()
-        }
-    }
-        val navHostFragment = supportFragmentManager.findFragmentById(
-            R.id.nav_host_fragment
-        ) as NavHostFragment
 
+        if (sessionManager.isUserLoggedIn()) {
+            // Check for location permission
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // Request location permission
+                ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.ACCESS_FINE_LOCATION), 1)
+            } else {
+                // Permission already granted, request location updates
+                requestLocationUpdates()
+            }
+        }
+
+        val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
-
         appBarConfig = AppBarConfiguration(navController.graph, drawerLayout)
 
-        setupActionBarWithNavController(navController, appBarConfig)
+        // Détection du fragment actuellement affiché
+        val currentFragment = navHostFragment.childFragmentManager.primaryNavigationFragment
+        if (currentFragment is ForecastDetailActivityFragment) {
+            // Appeler ForecastDetailActivity
+            val intent = Intent(this, ForecastDetailActivity::class.java)
+            startActivity(intent)
+        }
 
+        setupActionBarWithNavController(navController, appBarConfig)
         findViewById<NavigationView>(R.id.nav_view)?.setupWithNavController(navController)
         addCitiesToDrawer()
         addLogoutToDrawer()
         addCityToDrawer()
-
-
     }
+
+
 
     private fun requestLocationUpdates() {
     if (sessionManager.isUserLoggedIn() && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
@@ -141,7 +145,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.top_app_bar_menu, menu)
+        menuInflater.inflate(R.menu.activity_main, menu)
         return true
     }
 

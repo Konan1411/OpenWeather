@@ -1,0 +1,6 @@
+com.example.weather.test.app-core-1.5.0-0 C:\Users\david\.gradle\caches\transforms-4\a8ab72505c532920ee4f9d79e54e438e\transformed\core-1.5.0\res
+com.example.weather.test.app-annotation-experimental-1.4.0-1 C:\Users\david\.gradle\caches\transforms-4\cc6fe3a10be1703f188264daf724f2ca\transformed\annotation-experimental-1.4.0\res
+com.example.weather.test.app-androidTest-2 C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\build\generated\res\resValues\androidTest\debug
+com.example.weather.test.app-mergeDebugAndroidTestResources-3 C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.weather.test.app-mergeDebugAndroidTestResources-4 C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.weather.test.app-debugAndroidTest-5 C:\Users\david\OneDrive\Documents\GitHub\OpenWeather\OpenWeather-main\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

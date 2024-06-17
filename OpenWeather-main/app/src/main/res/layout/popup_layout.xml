@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_background"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_popup_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Popup Title"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Details"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <!-- Example content -->
+    <TextView
+        android:id="@+id/tv_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Temperature: 25°C"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Humidity: 60%"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/tv_wind_speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind Speed: 10 km/h"
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommendations:"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carry an umbrella."
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wear sunscreen."
+        android:textAppearance="?android:textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Close" />
+
+
+</LinearLayout>

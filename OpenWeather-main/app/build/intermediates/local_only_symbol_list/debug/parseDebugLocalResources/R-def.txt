@@ -46,8 +46,6 @@ drawable user
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_signUpFragment
 id action_login_logout
-id action_map
-id action_settings
 id action_settingsFragment_to_ChangePasswordFragment
 id action_share
 id action_signUpFragment_to_loginFragment
@@ -78,6 +76,7 @@ id formContainer
 id frameLayout
 id iv_forecast_icon
 id iv_wind_dir
+id labeledsettings
 id loading_indicator
 id login_button
 id main_nav_graph

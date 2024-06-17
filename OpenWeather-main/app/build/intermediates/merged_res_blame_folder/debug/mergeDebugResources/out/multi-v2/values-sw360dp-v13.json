@@ -4,7 +4,7 @@
             "outputFile": "com.example.weather.app-mergeDebugResources-51:/values-sw360dp-v13/values-sw360dp-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-4\\93a98e53f8d84abc99831a33c850ce41\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
+                    "source": "C:\\Users\\konan\\.gradle\\caches\\transforms-4\\93a98e53f8d84abc99831a33c850ce41\\transformed\\preference-1.2.0\\res\\values-sw360dp-v13\\values-sw360dp-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

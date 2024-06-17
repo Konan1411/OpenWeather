@@ -3015,13 +3015,11 @@ id action_image
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_signUpFragment
 id action_login_logout
-id action_map
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_settingsFragment_to_ChangePasswordFragment
 id action_share
 id action_signUpFragment_to_loginFragment
@@ -3216,6 +3214,7 @@ id iv_wind_dir
 id jumpToEnd
 id jumpToStart
 id labeled
+id labeledsettings
 id layout
 id left
 id leftToRight

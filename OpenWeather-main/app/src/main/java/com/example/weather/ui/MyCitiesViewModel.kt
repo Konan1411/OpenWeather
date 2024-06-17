@@ -23,7 +23,6 @@ class MyCitiesViewModel(application: Application) : AndroidViewModel(application
     )
 
     private val _userId = MutableLiveData<Int>()
-    val userId: LiveData<Int> get() = _userId
 
     val myCities_List: LiveData<List<MyCities>> = _userId.switchMap { userId ->
         if (userId != -1) {

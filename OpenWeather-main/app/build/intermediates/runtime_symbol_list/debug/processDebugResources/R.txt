@@ -3014,13 +3014,11 @@ int id action_image 0x7f09003d
 int id action_loginFragment_to_mainFragment 0x7f09003e
 int id action_loginFragment_to_signUpFragment 0x7f09003f
 int id action_login_logout 0x7f090040
-int id action_map 0x7f090041
 int id action_menu_divider 0x7f090042
 int id action_menu_presenter 0x7f090043
 int id action_mode_bar 0x7f090044
 int id action_mode_bar_stub 0x7f090045
 int id action_mode_close_button 0x7f090046
-int id action_settings 0x7f090047
 int id action_settingsFragment_to_ChangePasswordFragment 0x7f090048
 int id action_share 0x7f090049
 int id action_signUpFragment_to_loginFragment 0x7f09004a
@@ -3215,6 +3213,7 @@ int id iv_wind_dir 0x7f090106
 int id jumpToEnd 0x7f090107
 int id jumpToStart 0x7f090108
 int id labeled 0x7f090109
+int id labeledsettings 0x7f090243
 int id layout 0x7f09010a
 int id left 0x7f09010b
 int id leftToRight 0x7f09010c

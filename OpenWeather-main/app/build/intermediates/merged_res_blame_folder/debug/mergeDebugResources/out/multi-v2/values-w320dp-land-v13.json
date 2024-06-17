@@ -4,7 +4,7 @@
             "outputFile": "com.example.weather.app-mergeDebugResources-51:/values-w320dp-land-v13/values-w320dp-land-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-4\\b9864fb2a256859351e68dc8109f45a3\\transformed\\material-1.8.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
+                    "source": "C:\\Users\\konan\\.gradle\\caches\\transforms-4\\b9864fb2a256859351e68dc8109f45a3\\transformed\\material-1.8.0\\res\\values-w320dp-land-v13\\values-w320dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

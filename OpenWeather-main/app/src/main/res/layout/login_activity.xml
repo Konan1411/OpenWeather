@@ -121,32 +121,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <LinearLayout
-        android:id="@+id/footer"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <TextView
-            android:id="@+id/privacyPolicy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:text="@string/privacy_policy"
-            android:textColor="@color/purple_700"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/termsOfService"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/terms_of_service"
-            android:textColor="@color/purple_700"
-            android:textSize="14sp" />
-    </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

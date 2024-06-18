@@ -2838,8 +2838,6 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
-drawable edit
-drawable female_user
 drawable form_background
 drawable ic_action_map
 drawable ic_action_settings
@@ -2879,7 +2877,6 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
-drawable male_user
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2943,7 +2940,6 @@ drawable notify_panel_notification_icon_bg
 drawable openweather_img
 drawable openweatherback
 drawable openweathericon
-drawable popup_background
 drawable preference_list_divider_material
 drawable sun
 drawable test_level_drawable
@@ -3015,13 +3011,11 @@ id action_image
 id action_loginFragment_to_mainFragment
 id action_loginFragment_to_signUpFragment
 id action_login_logout
-id action_map
 id action_menu_divider
 id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_settings
 id action_settingsFragment_to_ChangePasswordFragment
 id action_share
 id action_signUpFragment_to_loginFragment
@@ -3061,8 +3055,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id btn_close
-id btn_expand_menu
 id buttonPanel
 id button_change_password
 id cache_measures
@@ -3172,7 +3164,6 @@ id fitXY
 id fixed
 id flip
 id floating
-id footer
 id forecast_detail
 id forecast_list
 id forever
@@ -3339,7 +3330,6 @@ id preferences_detail
 id preferences_header
 id preferences_sliding_pane_layout
 id pressed
-id privacyPolicy
 id progress_circular
 id progress_horizontal
 id radio
@@ -3455,7 +3445,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id termsOfService
 id text
 id text2
 id textEnd
@@ -3495,15 +3484,11 @@ id tv_forecast_city
 id tv_forecast_date
 id tv_forecast_description
 id tv_high_temp
-id tv_humidity
 id tv_loading_error
 id tv_low_temp
 id tv_pop
-id tv_popup_title
-id tv_temperature
 id tv_time
 id tv_wind
-id tv_wind_speed
 id unchecked
 id uniform
 id unlabeled
@@ -3721,7 +3706,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout popup_layout
 layout preference
 layout preference_category
 layout preference_category_material

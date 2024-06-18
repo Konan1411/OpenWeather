@@ -91,14 +91,6 @@ class MainActivity : AppCompatActivity() {
         val drawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
         appBarConfig = AppBarConfiguration(navController.graph, drawerLayout)
 
-        // Détection du fragment actuellement affiché
-        val currentFragment = navHostFragment.childFragmentManager.primaryNavigationFragment
-        if (currentFragment is ForecastDetailActivityFragment) {
-            // Appeler ForecastDetailActivity
-            val intent = Intent(this, ForecastDetailActivity::class.java)
-            startActivity(intent)
-        }
-
         setupActionBarWithNavController(navController, appBarConfig)
         findViewById<NavigationView>(R.id.nav_view)?.setupWithNavController(navController)
         addCitiesToDrawer()

@@ -57,10 +57,12 @@ class MainActivity : AppCompatActivity() {
 
     private val locationListener = object : LocationListener {
         override fun onLocationChanged(location: Location) {
-            // Get the city name based on the location
-            val cityName = getCityName(location.latitude, location.longitude)
-            // Add the city to the cities list
-            addCityToDatabase(cityName)
+            if(sessionManager.isUserLoggedIn()){
+                // Get the city name based on the location
+                val cityName = getCityName(location.latitude, location.longitude)
+                // Add the city to the cities list
+                addCityToDatabase(cityName)
+            }
         }
 
         override fun onStatusChanged(provider: String, status: Int, extras: Bundle) {}

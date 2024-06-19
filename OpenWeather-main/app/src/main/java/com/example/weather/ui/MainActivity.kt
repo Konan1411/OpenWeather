@@ -338,6 +338,9 @@ class MainActivity : AppCompatActivity() {
         private fun openAddCityDialog() {
             val builder = AlertDialog.Builder(this)
             val input = EditText(this)
+            val service: OpenWeatherService = OpenWeatherService.create()
+            val sharedPrefs = PreferenceManager.getDefaultSharedPreferences(this)
+            val ioDispatcher: CoroutineDispatcher = Dispatchers.IO
             input.hint = "City"
             builder.setView(input)
             builder.setTitle("Add a city")
@@ -348,19 +351,36 @@ class MainActivity : AppCompatActivity() {
                         if (cityList != null && cityList.any { it.city.equals(cityName, true) }) {
                             Toast.makeText(this, "This city already exists.", Toast.LENGTH_SHORT)
                                 .show()
-                        } else {
-                            addCity(cityName)
+                        } else CoroutineScope(Dispatchers.Main).launch {
+                            try {
+                                val response = service.loadFiveDayForecast(
+                                    cityName,
+                                    sharedPrefs.getString(
+                                        getString(R.string.pref_units_key),
+                                        getString(R.string.pref_units_default_value)
+                                    ),
+                                    OPENWEATHER_APPID
+                                )
+                                if (response.isSuccessful) {
+                                    addCity(cityName)
+                                } else {
+                                    Toast.makeText(
+                                        this@MainActivity,
+                                        "The city doesn't exist.",
+                                        Toast.LENGTH_SHORT
+                                    ).show()
+                                }
+                            } catch (e: Exception) {
+                            }
                         }
                     } else {
                         Toast.makeText(
                             this,
-                            "City name does not match with known cities.",
+                            "Please fill the text area.",
                             Toast.LENGTH_SHORT
                         ).show()
                     }
-                    dialog.dismiss()
-                }
-                .setNegativeButton("Cancel") { dialog, _ ->
+                }.setNegativeButton("Cancel") { dialog, _ ->
                     dialog.dismiss()
                 }
             val dialog = builder.create()
